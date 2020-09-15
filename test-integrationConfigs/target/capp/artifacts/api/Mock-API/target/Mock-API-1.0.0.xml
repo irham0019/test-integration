@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/mockapi" name="Mock-API" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
+            <property name="ContentType" scope="axis2" type="STRING" value="application/json"/>
+            <call>
+                <endpoint key="gov:/endpoints/mock-endpoint.xml"/>
+            </call>
+            <respond/>
+        </inSequence>
+        <outSequence>
+            <log level="custom">
+                <property expression="$body" name="++++++++++++++++++++++++++++"/>
+            </log>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>
