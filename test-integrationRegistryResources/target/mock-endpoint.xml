@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <endpoint name="mock-endpoint" xmlns="http://ws.apache.org/ns/synapse">
-    <http method="get" uri-template="http://demo1899276.mockable.io/prod">
+    <http method="get" uri-template="http://demo1899276.mockable.io/dev">
         <suspendOnFailure>
             <initialDuration>-1</initialDuration>
             <progressionFactor>1.0</progressionFactor>

@@ -11,6 +11,10 @@
   <modules>
     <module>test-integrationRegistryResources</module>
     <module>test-integrationConnectorExporter</module>
+    <module>test-integrationDataSourceDev</module>
+    <module>test-integrationDataSourceProd</module>
+    <module>test-integrationDataSourceQA</module>
+    <module>test-integrationDataService</module>
     <module>test-integrationConfigs</module>
     <module>test-integrationCompositeExporter</module>
     <module>test-integrationCompositeExporterQA</module>
