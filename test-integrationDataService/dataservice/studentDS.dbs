@@ -1,0 +1,17 @@
+<data name="studentDS" serviceGroup="studentSG" disableLegacyBoxcarringMode="false" enableBatchRequests="false" enableBoxcarring="false"  serviceNamespace="http://ws.wso2.org/dataservice" serviceStatus="active" transports="http https">
+
+    <config id="default">
+      <property name="carbon_datasource_name">MySQLConnection</property>
+   </config>
+   <query id="select_all_Student_query" useConfig="default">
+      <sql>SELECT name, password FROM student</sql>
+      <result element="USERSCollection" rowName="USERS">
+         <element column="name" name="NAME" xsdType="xs:string"/>
+         <element column="password" name="ADMIN" xsdType="xs:string"/>
+      </result>
+   </query>
+   <operation name="select_all_Student_operation">
+      <call-query href="select_all_Student_query"/>
+   </operation>
+    <description/>
+</data>

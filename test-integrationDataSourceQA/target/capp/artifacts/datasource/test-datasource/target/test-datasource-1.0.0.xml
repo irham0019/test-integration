@@ -1,0 +1,15 @@
+<datasource>
+    <name>MySQLConnection</name>
+    <description>MySQL Connection</description>
+    <jndiConfig useDataSourceFactory="false">
+        <name>SchoolJNDI</name>
+    </jndiConfig>
+    <definition type="RDBMS">
+        <configuration>
+            <driverClassName>com.mysql.jdbc.Driver</driverClassName>
+            <url>jdbc:mysql://localhost:3306/qa_school</url>
+            <username>root</username>
+            <password>root</password>
+        </configuration>
+    </definition>
+</datasource>
